@@ -8,4 +8,10 @@ function logCRP() {
 
 window.addEventListener("load", function(event) {
   logCRP();
+
+  WebFont.load({
+    google: {
+      families: ['Open Sans']
+    }
+  });
 });
