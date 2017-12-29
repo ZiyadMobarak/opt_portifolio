@@ -11,9 +11,7 @@ body {
   font-size: 14px;
   line-height: 1.61;
   font-weight: 400;
-}
-
-body, button, input, select, textarea {
+  background: #fff;
   font-family: 'Open Sans', sans-serif;
   color: #333;
 }
@@ -26,22 +24,8 @@ a:visited {
   color: #61C;
 }
 
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
+a:hover {
   color: #c00;
-  outline: 0;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-pre, code {
-  font-family: monospace, monospace;
-  font-size: 1em;
 }
 
 ul, ol {
@@ -50,12 +34,7 @@ ul, ol {
 }
 
 img {
-  border: 0;
   max-width: 100%;
-}
-
-body {
-  background: #fff;
 }
 
 header, footer, .container {
