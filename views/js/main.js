@@ -336,7 +336,10 @@ function randomName() {
   return generator(adjectives[randomNumberAdj], nouns[randomNumberNoun]);
 }
 
-// These functions return a string of a random ingredient from each respective category of ingredients.
+//-------------------------------------
+// These functions return a string of a random
+// ingredient from each respective category of ingredients.
+//-------------------------------------
 var selectRandomMeat = function() {
   var randomMeat = pizzaIngredients.meats[Math.floor((Math.random() * pizzaIngredients.meats.length))];
   return randomMeat;
@@ -361,7 +364,11 @@ var selectRandomCrust = function() {
   var randomCrust = pizzaIngredients.crusts[Math.floor((Math.random() * pizzaIngredients.crusts.length))];
   return randomCrust;
 };
+//-------------------------------------
+// End of random generator Ingredients
+//-------------------------------------
 
+//This method to put each ingerdient in a different list item
 var ingredientItemizer = function(string) {
   return "<li>" + string + "</li>";
 };
@@ -455,7 +462,7 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-  // Iterates through pizza elements on the page and changes their widths
+  //This method will iterate through all pizza elements and change their sizes
   function changePizzaSizes(size) {
     // Changes the slider value to a percent width
     switch (size) {
@@ -475,8 +482,9 @@ var resizePizzas = function(size) {
     //Remove repatitive code
     var allPizzas = document.querySelectorAll(".randomPizzaContainer");
 
+    //This loop will set the new width for all the elements in the pizza container
     for (var i = 0; i < allPizzas.length; i++) {
-      allPizzas[i].style.width = (newwidth * 100) + "%";
+      allPizzas[i].style.width = (newwidth * 100) + "%"; //Multiply by 100 to have a percentage
     }
   }
 
