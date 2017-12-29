@@ -6,6 +6,14 @@ function logCRP() {
   stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
 }
 
+function ga(w, g) {
+  w['GoogleAnalyticsObject'] = g;
+  w[g] = w[g] || function() {
+    (w[g].q = w[g].q || []).push(arguments)
+  };
+  w[g].l = 1 * new Date();
+}
+
 window.addEventListener("load", function(event) {
   logCRP();
 
@@ -14,4 +22,7 @@ window.addEventListener("load", function(event) {
       families: ['Open Sans']
     }
   });
+
+  ga('create', 'UA-111735627-1');
+  ga('send', 'pageview');
 });
