@@ -11,8 +11,8 @@ https://ziyadmobarak.github.io/opt_portifolio/
 ### The Project Rubric
 The following requirements have been tested:-
 - **index.html** scored 92/100 in the mobile and 95/100 in the desktop, so it achieves more than 90% in both.
-- **pizza.html** achieved an average rendering time between 12-17ms. Therefore, it delivers 60fps.
-- **pizza.html** average time to resize pizzas is around 0.5ms. Thus, it is less than 5ms.
+- **pizza.html** achieved an average rendering time between 0.2ms. Therefore, it delivers 60fps.
+- **pizza.html** average time to resize pizzas is around 0.3ms. Thus, it is less than 5ms.
 
 
 ### About The Code
